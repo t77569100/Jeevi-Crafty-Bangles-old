@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Your Cart | Jeevi's Crafty Bangles</title><link rel="stylesheet" href="style.css"></head>
+<body data-page="cart">
+<header class="site-header"><a class="brand" href="index.html"><img src="images/logo.png" alt=""><span><b>Jeevi's</b><small>Crafty Bangles</small></span></a><nav><a href="index.html">Home</a><a href="login.html">Login</a></nav></header>
+<main class="section page-main"><a class="back-link" href="index.html">← Continue shopping</a><p class="eyebrow">YOUR SELECTION</p><h1>Your Shopping Cart 🛒</h1><div id="cart-items"></div><section class="cart-summary checkout-panel"><h2>Checkout details</h2><p class="muted">Demo checkout — no money will be collected.</p>
+<form id="checkout-form" class="checkout-form">
+<label for="customer-name">Full name</label><input id="customer-name" name="name" autocomplete="name" required maxlength="80" placeholder="Enter your name">
+<label for="customer-phone">Mobile number</label><input id="customer-phone" name="phone" inputmode="numeric" autocomplete="tel" pattern="[6-9][0-9]{9}" minlength="10" maxlength="10" required placeholder="10-digit mobile number">
+<label for="customer-address">Delivery address</label><textarea id="customer-address" name="address" autocomplete="street-address" required maxlength="500" rows="3" placeholder="House no., street, area, city, PIN code"></textarea>
+<h3>Payment method</h3><label class="payment-option"><input type="radio" name="payment" value="cod" checked> Cash on Delivery (demo)</label>
+<label class="payment-option"><input type="radio" name="payment" value="upi-demo"> UPI / Google Pay / PhonePe / Paytm (demo only)</label>
+<h2 class="checkout-total">Total: <span id="cart-total">₹0</span></h2><button id="checkout-button" class="btn" type="submit">Place Demo Order</button><p id="checkout-message" class="notice" role="status" aria-live="polite"></p>
+</form><small>Demo only: selecting UPI does not open a payment app or charge money. Real payment gateway is not connected.</small></section></main>
+<footer><b>Jeevi's Crafty Bangles</b><p>Handmade with Love ❤️</p></footer>
+<script src="common.js"></script><script type="module" src="firebase.js"></script><script src="cart.js"></script></body></html>
