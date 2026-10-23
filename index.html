@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#e75480"><title>Jeevi's Crafty Bangles</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="home">
+  <div id="splash-screen" class="splash">
+    <img src="images/logo.png" alt="Jeevi's Crafty Bangles logo">
+    <h2>Jeevi's Crafty Bangles</h2><p>Handmade with Love ❤️</p>
+  </div>
+  <div id="app" class="hidden">
+    <header class="site-header">
+      <a class="brand" href="index.html"><img src="images/logo.png" alt=""><span><b>Jeevi's</b><small>Crafty Bangles</small></span></a>
+      <nav><a href="index.html">Home</a><a href="cart.html">🛒 Cart <span id="header-cart-count">0</span></a><a href="login.html">Login</a></nav>
+    </header>
+    <main>
+      <section class="hero"><p class="eyebrow">HANDMADE WITH LOVE</p><h1>Beautiful Bangles,<br>Made Just for You 💗</h1><p>Discover handmade creations crafted with care.</p><a class="btn" href="#products">Explore Collection</a></section>
+      <section class="section"><div class="section-heading"><div><p class="eyebrow">OUR COLLECTION</p><h2>Find Your Favourite ✨</h2></div></div>
+        <input id="search-input" class="search" type="search" placeholder="🔍 Search bangles and crafts..." aria-label="Search products">
+        <div class="chips"><button class="chip active" data-category="All">All</button><button class="chip" data-category="Bangles">Bangles</button><button class="chip" data-category="Crafts">Handmade Crafts</button><button class="chip" data-category="Kambalam">Kambalam</button></div>
+        <div id="product-list" class="product-grid"></div>
+      </section>
+      <section class="callout"><h2>A little handmade happiness 💕</h2><p>Thoughtfully made, beautifully yours.</p></section>
+    </main>
+    <footer><img src="images/logo.png" alt=""><b>Jeevi's Crafty Bangles</b><p>Handmade with Love ❤️</p><small>Demo store · No real orders or payments</small></footer>
+  </div>
+  <script src="common.js"></script><script type="module" src="firebase.js"></script><script type="module" src="home.js"></script>
+</body></html>
