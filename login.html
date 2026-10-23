@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#e75480"><title>Login | Jeevi's Crafty Bangles</title><link rel="stylesheet" href="style.css"></head>
+<body data-page="login"><header class="site-header"><a class="brand" href="index.html"><img src="images/logo.png" alt=""><span><b>Jeevi's</b><small>Crafty Bangles</small></span></a><nav><a href="index.html">Home</a><a href="cart.html">🛒 Cart</a></nav></header>
+<main class="login-wrap"><form id="login-form" class="login-card"><p class="eyebrow">WELCOME TO JEEVI'S</p><h1>Mobile OTP Login 💗</h1><p class="muted">உங்கள் mobile number-க்கு OTP அனுப்பப்படும். Admin access தனியாக அனுமதிக்கப்பட்ட UID-க்கு மட்டும்.</p>
+<label for="customer-name">Name<input id="customer-name" autocomplete="name" maxlength="80" placeholder="Your name"></label>
+<label for="customer-address">Delivery address<input id="customer-address" autocomplete="street-address" maxlength="500" placeholder="Address (optional for now)"></label>
+<label for="phone">Mobile number<input id="phone" type="tel" inputmode="numeric" autocomplete="tel" required pattern="[6-9][0-9]{9}" minlength="10" maxlength="10" placeholder="10-digit Indian mobile number"></label>
+<div id="recaptcha-container"></div><button class="btn full" id="send-otp" type="button">Send OTP</button>
+<label for="otp">OTP<input id="otp" inputmode="numeric" autocomplete="one-time-code" maxlength="6" placeholder="Enter OTP"></label>
+<button class="btn full" type="submit">Verify OTP & Continue</button><p id="login-message" class="notice" aria-live="polite"></p><a class="back-link" href="index.html">← Back to shop</a></form></main>
+<footer><small>OTP sign-in uses Firebase. SMS quota and charges may apply.</small></footer><script src="common.js"></script><script type="module" src="firebase.js"></script><script src="login.js"></script></body></html>
